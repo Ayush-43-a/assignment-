@@ -1,20 +1,23 @@
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: white;
+    background-color: #010109;
+    color: #f4f4f5;
 }
 
 /* Header */
 header {
-    background: #111827;
+    background: #09090b;
     padding: 20px 50px;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #27272a;
 }
 
 /* Navigation */
@@ -26,21 +29,27 @@ nav {
 
 /* Logo */
 nav div:first-child button {
-    background: linear-gradient(135deg, #6366f1, #a855f7);
+    background: linear-gradient(135deg, #10b981, #059669);
     border: none;
     padding: 10px 22px;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 nav div:first-child a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Navigation links */
+nav div:first-child button:hover {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.35);
+    transform: translateY(-2px);
+}
+
+/* Navigation Links */
 nav ul {
     display: flex;
     list-style: none;
@@ -48,20 +57,20 @@ nav ul {
 }
 
 nav ul li a {
-    color: #cbd5e1;
+    color: #a1a1aa;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #818cf8;
+    color: #34d399;
 }
 
-/* Login button */
+/* Login Button */
 nav div:last-child button {
     background: transparent;
-    border: 1px solid #818cf8;
+    border: 1px solid #10b981;
     padding: 10px 24px;
     border-radius: 8px;
     cursor: pointer;
@@ -69,17 +78,21 @@ nav div:last-child button {
 }
 
 nav div:last-child a {
-    color: white;
+    color: #34d399;
     text-decoration: none;
     font-size: 15px;
 }
 
 nav div:last-child button:hover {
-    background: #6366f1;
+    background: #10b981;
     transform: translateY(-2px);
 }
 
-/* Responsive design */
+nav div:last-child button:hover a {
+    color: #ffffff;
+}
+
+/* Responsive Design */
 @media (max-width: 600px) {
     header {
         padding: 20px;
